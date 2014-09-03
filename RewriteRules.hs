@@ -109,7 +109,7 @@ prop_dedual_onlyNegativeAtoms x  =  check (dedual x)
         check _ = True
 
 prop_unexpt_inExponentialLattice1 :: Term -> Bool
-prop_unexpt_inExponentialLattice2 :: Term -> Gen Prop
+prop_unexpt_inExponentialLattice2 :: Term -> Property
 
 prop_unexpt_inExponentialLattice1 x  =  lattice (unexpt x)
 
